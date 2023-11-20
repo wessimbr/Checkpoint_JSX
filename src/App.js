@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Name from './Name';
+import Price from './Price';
+import Description from './Description'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Product from './Product';
+
+var name='Wessim';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Card style={{ width: '18rem' , border: '3px solid green'}}>
+      <Card.Img variant="top" src={Product.image} />
+      <Card.Body>
+      <Card.Title style={{color:'green' , fontSize: '25px'}}>Mechanical Assistant </Card.Title>
+      <Name/>
+      <Price/>
+      <Description/>
+      <Button variant="primary">Buy</Button>
+      </Card.Body>
+      </Card>
+      <h6>Hello {name}</h6>
+
     </div>
   );
 }
