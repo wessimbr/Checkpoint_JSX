@@ -1,3 +1,4 @@
+
 const Product = {
     name : 'Robot',
     price: '1000TND',
@@ -7,4 +8,3 @@ const Product = {
     
 };
 export default Product;
- 
